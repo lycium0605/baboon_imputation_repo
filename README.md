@@ -4,7 +4,7 @@ Test dataset for reproducing the genotype imputation pipeline described in:
 
 > **Genotype imputation from low-coverage whole genome sequencing data in wild baboons**
 
-This repository contains a minimal subset of the full dataset — a 5 Mb region of baboon chromosome 20 (NC_044995.1:1-5,000,000) with 7 validation samples — sufficient to run the complete GLIMPSE2 imputation and post-imputation filtering pipeline end-to-end.
+This repository contains a subset of the full dataset — a 5 Mb region of baboon chromosome 20 (NC_044995.1:1-5,000,000) with all 36 high-coverage validation samples — sufficient to run the complete GLIMPSE2 imputation and post-imputation filtering pipeline end-to-end.
 
 ## Data Summary
 
@@ -12,25 +12,54 @@ This repository contains a minimal subset of the full dataset — a 5 Mb region 
 |------|-------------|------|
 | `data/reference/ref_phased_5Mb.bcf` | Phased reference panel (250 baboons, 133K variants) | 3.8 MB |
 | `data/reference/ref_sites_5Mb.vcf.gz` | Sites-only VCF for chunking | 732 KB |
-| `data/validation/truth_5Mb.vcf.gz` | High-coverage truth genotypes (7 samples, 59K variants) | 6.1 MB |
-| `data/bams/*.1x.bam` | 1x downsampled BAMs (7 samples) | 3-4 MB each |
+| `data/validation/truth_5Mb.vcf.gz` | High-coverage truth genotypes (36 samples, 59K variants) | 17 MB |
+| `data/bams/*.1x.bam` | 1x downsampled BAMs (36 samples) | 1-4 MB each |
 | `data/maps/NC_044995.1_gmap.gz` | Genetic map for chromosome 20 | 2.1 MB |
 
-**Total: ~41 MB**
+**Total: ~187 MB**
 
 ## Samples
 
-Seven high-coverage Amboseli baboons (BioProject [PRJNA755322](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA755322)), downsampled to 1x for imputation testing:
+36 high-coverage Amboseli baboons (BioProject [PRJNA755322](https://www.ncbi.nlm.nih.gov/bioproject/PRJNA755322)), downsampled to 1x for imputation testing:
 
 | Sample | BioSample |
 |--------|-----------|
-| SAMN20815323 | [SAMN20815323](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815323) |
-| SAMN20814949 | [SAMN20814949](https://www.ncbi.nlm.nih.gov/biosample/SAMN20814949) |
-| SAMN20815324 | [SAMN20815324](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815324) |
-| SAMN20815322 | [SAMN20815322](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815322) |
-| SAMN20815325 | [SAMN20815325](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815325) |
-| SAMN20815227 | [SAMN20815227](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815227) |
+| CAH | Amboseli baboon |
+| DEX | Amboseli baboon |
+| DEZ | Amboseli baboon |
+| DIW_merged | Amboseli baboon |
+| DLO | Amboseli baboon |
+| DOI | Amboseli baboon |
+| ECO | Amboseli baboon |
+| EMC_merged | Amboseli baboon |
+| GAN_merged | Amboseli baboon |
+| GIF_merged | Amboseli baboon |
+| GLA | Amboseli baboon |
+| GON | Amboseli baboon |
+| KIC | Amboseli baboon |
+| LOP | Amboseli baboon |
+| LYK | Amboseli baboon |
+| NAJ | Amboseli baboon |
+| NAK_likely | Amboseli baboon |
+| NAL | Amboseli baboon |
+| NAX | Amboseli baboon |
+| ROJ | Amboseli baboon |
+| RUI | Amboseli baboon |
 | SAMN04096034 | [SAMN04096034](https://www.ncbi.nlm.nih.gov/biosample/SAMN04096034) |
+| SAMN20814949 | [SAMN20814949](https://www.ncbi.nlm.nih.gov/biosample/SAMN20814949) |
+| SAMN20815227 | [SAMN20815227](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815227) |
+| SAMN20815322 | [SAMN20815322](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815322) |
+| SAMN20815323 | [SAMN20815323](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815323) |
+| SAMN20815324 | [SAMN20815324](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815324) |
+| SAMN20815325 | [SAMN20815325](https://www.ncbi.nlm.nih.gov/biosample/SAMN20815325) |
+| TAS | Amboseli baboon |
+| TIG | Amboseli baboon |
+| UJU | Amboseli baboon |
+| UKR | Amboseli baboon |
+| VAQ | Amboseli baboon |
+| VLA | Amboseli baboon |
+| WAJ | Amboseli baboon |
+| WEF | Amboseli baboon |
 
 ## Reference Panel
 
